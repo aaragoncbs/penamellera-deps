@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BrainCircuit, Mountain, Goal } from 'lucide-react';
 import { BoloPalmaIcon } from '@/components/icons/bolo-palma';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const disciplines = [
   {
@@ -10,7 +12,8 @@ const disciplines = [
     title: 'Ajedrez: Estrategia y Concentración',
     description: 'El Ajedrez goza de una sólida base en Peñamellera. Con el Club de Ajedrez Peñamellera, la disciplina no solo es un juego, sino un vehículo para el desarrollo mental y la convivencia. Consulta nuestro calendario de torneos locales, clases y la participación de nuestros talentos en ligas asturianas. El Ajedrez es la muestra de que el deporte no tiene por qué ser solo físico.',
     icon: <BrainCircuit className="h-8 w-8 text-primary" />,
-    imageId: 'chess'
+    imageId: 'chess',
+    link: 'https://drive.google.com/drive/u/0/folders/18jKJzYi0UKQNpQj3GKD7PZu8c9b_leCb'
   },
   {
     id: 'bolo-palma',
@@ -55,7 +58,7 @@ export default function DisciplinesSection() {
                   </div>
                   <CardTitle className="font-headline text-xl leading-tight pt-2">{discipline.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow">
+                <CardContent className="flex-grow flex flex-col">
                   {image && (
                      <div className="relative h-48 w-full mb-4 rounded-md overflow-hidden">
                         <Image
@@ -67,7 +70,12 @@ export default function DisciplinesSection() {
                         />
                     </div>
                   )}
-                  <p className="text-muted-foreground">{discipline.description}</p>
+                  <p className="text-muted-foreground flex-grow">{discipline.description}</p>
+                  {discipline.link && (
+                    <Button asChild variant="link" className="px-0 pt-4 justify-start">
+                        <Link href={discipline.link} target="_blank">Ver revistas de ajedrez</Link>
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );
