@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-landscape",
+      "description": "A stunning view of a lush green valley in the Picos de Europa mountain range, with dramatic peaks in the background under a clear blue sky.",
+      "imageUrl": "https://picsum.photos/seed/hero1/1920/1080",
+      "imageHint": "picos de europa"
+    },
+    {
+      "id": "chess",
+      "description": "A close-up shot of a chess game in progress, focusing on a wooden king piece on the board.",
+      "imageUrl": "https://picsum.photos/seed/chess1/600/400",
+      "imageHint": "chess game"
+    },
+    {
+      "id": "bolo-palma",
+      "description": "Action shot of a traditional game of 'bolo palma', a type of skittles, with wooden pins arranged on the ground.",
+      "imageUrl": "https://picsum.photos/seed/bowling1/600/400",
+      "imageHint": "bowling pins"
+    },
+    {
+      "id": "mountain-running",
+      "description": "A trail runner ascending a steep, rocky path in the mountains, with a scenic backdrop of peaks and valleys.",
+      "imageUrl": "https://picsum.photos/seed/runner1/600/400",
+      "imageHint": "mountain runner"
+    }
+  ]
 }
