@@ -2,6 +2,7 @@ import type { Event, Sport } from './definitions';
 
 export const sports: Sport[] = ['Ajedrez', 'Bolo Palma', 'Fútbol', 'Carrera por Montaña'];
 
+// This data will now be fetched from Firestore, this is just a backup.
 export const events: Event[] = [
   {
     id: '1',
