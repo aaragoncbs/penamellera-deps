@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-landscape",
-      "description": "A stunning view of a lush green valley in the Picos de Europa mountain range, with dramatic peaks in the background under a clear blue sky.",
-      "imageUrl": "https://picsum.photos/seed/hero1/1920/1080",
-      "imageHint": "picos de europa"
+      "description": "Una vista impresionante del Pico Peñamellera.",
+      "imageUrl": "https://i.imgur.com/Kz8A1lE.png",
+      "imageHint": "pico peñamellera"
     },
     {
       "id": "chess",
