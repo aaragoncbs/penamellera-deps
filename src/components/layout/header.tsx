@@ -1,12 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, Trophy } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
-import Logo from '../icons/logo';
 
 const navLinks = [
   { href: '#disciplinas', label: 'Actividades' },
@@ -45,7 +44,7 @@ export default function Header() {
             href="#"
             className="flex items-center gap-2 text-lg font-semibold"
           >
-            <Logo className="h-6 w-6" />
+            <Trophy className="h-6 w-6" />
             <span className="sr-only">Peñamellera Deportes</span>
           </Link>
           {navLinks.map((link) => (
@@ -66,7 +65,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Logo width={28} height={28} />
+          <Trophy className="h-7 w-7" />
           <span className="font-headline font-semibold text-lg">
             Peñamellera Deportes
           </span>
