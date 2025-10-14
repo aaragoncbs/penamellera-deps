@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '@/components/icons/logo';
+import { Trophy } from 'lucide-react';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-landscape');
@@ -21,8 +21,8 @@ export default function HeroSection() {
       )}
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 text-center px-4 flex flex-col items-center">
-        <div className="mb-4">
-            <Logo width={120} height={120} />
+        <div className="mb-4 bg-primary/20 p-4 rounded-full">
+            <Trophy className="h-16 w-16 text-white" />
         </div>
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
           Deportes Peñamellera
