@@ -61,7 +61,7 @@ export default function CalendarPage() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-8">
-        <aside className="w-full md:w-1/3 lg:w-1/4">
+        <aside className="w-full md:w-2/5 lg:w-1/3">
           <Card>
             <CardHeader>
                 <CardTitle className="font-headline">Filtrar Eventos</CardTitle>
@@ -108,7 +108,7 @@ export default function CalendarPage() {
           </Card>
         </aside>
 
-        <main className="w-full md:w-2/3 lg:w-3/4">
+        <main className="w-full md:w-3/5 lg:w-2/3">
           <h2 className="font-headline text-2xl font-bold mb-4">
             Eventos para {date ? format(date, 'PPP', { locale: es }) : 'todas las fechas'}
           </h2>
