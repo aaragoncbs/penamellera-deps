@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BrainCircuit, Mountain, Users } from 'lucide-react';
+import { BrainCircuit, Mountain, Goal } from 'lucide-react';
 import { BoloPalmaIcon } from '@/components/icons/bolo-palma';
 
 const disciplines = [
@@ -18,6 +18,13 @@ const disciplines = [
     description: 'El bolo palma es una modalidad tradicional muy arraigada en Peñamellera, donde representa parte esencial de la identidad local. Panes, capital del concejo, es considerada la capital asturiana del bolo palma y acoge competiciones de gran prestigio como el Concurso de San Cipriano, que atrae a los mejores jugadores de la comarca.',
     icon: <BoloPalmaIcon className="h-8 w-8 text-primary" />,
     imageId: 'bolo-palma'
+  },
+  {
+    id: 'futbol',
+    title: 'Fútbol: Pasión de multitudes',
+    description: 'El fútbol es una de las disciplinas más populares en Peñamellera, con una fuerte presencia en la vida deportiva local. El equipo de la S.D. Peñamellera compite con orgullo en las ligas regionales, fomentando el espíritu de equipo y la competitividad sana entre los jóvenes.',
+    icon: <Goal className="h-8 w-8 text-primary" />,
+    imageId: 'football'
   },
   {
     id: 'montana',
@@ -37,7 +44,7 @@ export default function DisciplinesSection() {
             Disciplinas Deportivas Destacadas en Peñamellera
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {disciplines.map((discipline) => {
             const image = PlaceHolderImages.find(img => img.id === discipline.imageId);
             return (

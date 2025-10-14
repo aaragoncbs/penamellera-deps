@@ -4,24 +4,30 @@
       "id": "hero-landscape",
       "description": "Una vista impresionante del Pico Peñamellera.",
       "imageUrl": "https://i.imgur.com/h4GaCBF.png",
-      "imageHint": "pico peñamellera"
+      "imageHint": "Pico Peñamellera"
     },
     {
       "id": "chess",
       "description": "A close-up shot of a chess game in progress, focusing on a wooden king piece on the board.",
-      "imageUrl": "https://picsum.photos/seed/chess1/600/400",
+      "imageUrl": "https://i.imgur.com/3t3TDpD.jpg",
       "imageHint": "chess game"
     },
     {
       "id": "bolo-palma",
       "description": "Action shot of a traditional game of 'bolo palma', a type of skittles, with wooden pins arranged on the ground.",
-      "imageUrl": "https://picsum.photos/seed/bowling1/600/400",
+      "imageUrl": "https://i.imgur.com/y7o5eAs.jpg",
       "imageHint": "bowling pins"
+    },
+    {
+      "id": "football",
+      "description": "A football on the grass of a stadium.",
+      "imageUrl": "https://picsum.photos/seed/football1/600/400",
+      "imageHint": "football stadium"
     },
     {
       "id": "mountain-running",
       "description": "A trail runner ascending a steep, rocky path in the mountains, with a scenic backdrop of peaks and valleys.",
-      "imageUrl": "https://picsum.photos/seed/runner1/600/400",
+      "imageUrl": "https://i.imgur.com/KfhEGEX.jpg",
       "imageHint": "mountain runner"
     }
   ]
