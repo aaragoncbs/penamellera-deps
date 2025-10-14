@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import Link from 'next/link';
+import Logo from '@/components/icons/logo';
 
 export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-landscape');
@@ -19,9 +20,12 @@ export default function HeroSection() {
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 text-center px-4 flex flex-col items-center">
+        <div className="mb-4">
+            <Logo width={120} height={120} />
+        </div>
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
-          Peñamellera: El Corazón Deportivo de Asturias
+          Deportes Peñamellera
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200">
           Explora la pasión, la tradición y el dinamismo de los deportes en el
