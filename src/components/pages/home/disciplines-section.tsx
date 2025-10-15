@@ -50,6 +50,7 @@ export default function DisciplinesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {disciplines.map((discipline) => {
             const image = PlaceHolderImages.find(img => img.id === discipline.imageId);
+            const imageHeightClass = discipline.id === 'ajedrez' ? 'h-[28rem]' : 'h-96'; // Taller for chess
             return (
               <Card key={discipline.id} className="flex flex-col overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out shadow-lg">
                 <CardHeader className="flex-row items-start gap-4 space-y-0 pb-4">
@@ -60,7 +61,7 @@ export default function DisciplinesSection() {
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   {image && (
-                     <div className="relative h-64 w-full mb-4 rounded-md overflow-hidden">
+                     <div className={`relative ${imageHeightClass} w-full mb-4 rounded-md overflow-hidden`}>
                         <Image
                             src={image.imageUrl}
                             alt={image.description}
