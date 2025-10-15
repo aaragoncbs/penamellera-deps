@@ -3,25 +3,25 @@
         {
             "id": "cyclist",
             "description": "A cyclist riding on a scenic mountain road.",
-            "imageUrl": "https://i.imgur.com/N5OPEtI.jpg",
+            "imageUrl": "https://i.imgur.com/05Iqc72.jpg",
             "imageHint": "cyclist mountain"
           },
           {
             "id": "swimmer",
             "description": "A person swimming in a pool.",
-            "imageUrl": "https://i.imgur.com/fA15lV7.jpg",
+            "imageUrl": "https://i.imgur.com/NaBTu9p.jpg",
             "imageHint": "swimmer pool"
           },
           {
             "id": "kayak",
             "description": "People kayaking on a river surrounded by lush green hills.",
-            "imageUrl": "https://i.imgur.com/3j3y5sS.jpg",
+            "imageUrl": "https://i.imgur.com/D7iuM5q.jpg",
             "imageHint": "kayak river"
           },
           {
             "id": "hiking",
             "description": "A group of hikers walking on a trail in the mountains.",
-            "imageUrl": "https://i.imgur.com/Z45T9NB.jpg",
+            "imageUrl": "https://i.imgur.com/PfwtKOv.jpg",
             "imageHint": "hiking mountains"
           },
           {
