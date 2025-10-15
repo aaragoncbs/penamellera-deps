@@ -3,6 +3,7 @@ import AboutSection from '@/components/pages/home/about-section';
 import DisciplinesSection from '@/components/pages/home/disciplines-section';
 import AgendaSection from '@/components/pages/home/agenda-section';
 import ContactSection from '@/components/pages/home/contact-section';
+import GallerySection from '@/components/pages/home/gallery-section';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <DisciplinesSection />
+      <GallerySection />
       <AgendaSection />
       <ContactSection />
     </>
