@@ -21,6 +21,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 const navLinks = [
   { href: '#disciplinas', label: 'Actividades' },
   { href: '/calendar', label: 'Calendario' },
+  { href: '/gallery', label: 'Galería' },
   { href: '/contact', label: 'Contacto' },
 ];
 
