@@ -60,7 +60,7 @@ export default function DisciplinesSection() {
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   {image && (
-                     <div className="relative h-48 w-full mb-4 rounded-md overflow-hidden">
+                     <div className="relative h-64 w-full mb-4 rounded-md overflow-hidden">
                         <Image
                             src={image.imageUrl}
                             alt={image.description}
