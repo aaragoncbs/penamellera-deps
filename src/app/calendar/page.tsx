@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import type { DateRange } from 'react-day-picker';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
+import { useSearchParams } from 'next/navigation';
 
 import { Button } from '@/components/ui/button';
 import { Calendar } from '@/components/ui/calendar';
@@ -14,8 +15,23 @@ import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 
 export default function CalendarPage() {
-  const [date, setDate] = useState<Date | undefined>(new Date());
+  const searchParams = useSearchParams();
+  const dateParam = searchParams.get('date');
+  
+  const initialDate = dateParam ? new Date(dateParam) : new Date();
+  const [date, setDate] = useState<Date | undefined>(initialDate);
   const [activeFilters, setActiveFilters] = useState<Sport[]>([]);
+
+  useEffect(() => {
+    const dateParam = searchParams.get('date');
+    if (dateParam) {
+      const newDate = new Date(dateParam);
+      // Check if it's a valid date to avoid errors
+      if (!isNaN(newDate.getTime())) {
+        setDate(newDate);
+      }
+    }
+  }, [searchParams]);
 
   const toggleFilter = (sport: Sport) => {
     setActiveFilters((prev) =>
