@@ -20,7 +20,7 @@ export default function EventCard({ event }: EventCardProps) {
           <div>
             <CardTitle className="font-headline text-xl">{event.title}</CardTitle>
             <CardDescription>
-              {format(event.date, "eeee, d 'de' MMMM", { locale: es })}
+              {format(event.date, "eeee, d 'de' MMMM 'de' yyyy", { locale: es })}
             </CardDescription>
           </div>
           <Badge variant="secondary">{event.sport}</Badge>

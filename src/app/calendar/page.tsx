@@ -137,7 +137,7 @@ export default function CalendarPage() {
                         <div>
                             <CardTitle className="font-headline">{event.title}</CardTitle>
                             <CardDescription>
-                            {format(event.date, "eeee, d 'de' MMMM '·' HH:mm 'h'", { locale: es })}
+                            {format(event.date, "eeee, d 'de' MMMM 'de' yyyy '·' HH:mm 'h'", { locale: es })}
                             </CardDescription>
                         </div>
                         <Badge variant="secondary">{event.sport}</Badge>
