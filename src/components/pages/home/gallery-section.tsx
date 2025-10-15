@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { GalleryImages } from '@/lib/gallery-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function GallerySection() {
   // Seleccionamos un subconjunto de imágenes para la vista previa
-  const previewImages = PlaceHolderImages.slice(4, 8);
+  const previewImages = GalleryImages.slice(0, 4);
 
   return (
     <section id="gallery-preview" className="py-16 md:py-24 bg-card">

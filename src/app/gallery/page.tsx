@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { GalleryImages, type ImagePlaceholder } from '@/lib/gallery-images';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
@@ -23,7 +23,7 @@ export default function GalleryPage() {
 
         <Dialog>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-            {PlaceHolderImages.map((image) => (
+            {GalleryImages.map((image) => (
               <DialogTrigger asChild key={image.id}>
                 <Card 
                   className="overflow-hidden cursor-pointer group"

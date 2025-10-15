@@ -29,30 +29,6 @@
       "description": "A trail runner ascending a steep, rocky path in the mountains, with a scenic backdrop of peaks and valleys.",
       "imageUrl": "https://i.imgur.com/KfhEGEX.jpg",
       "imageHint": "mountain runner"
-    },
-    {
-      "id": "cyclist",
-      "description": "A cyclist riding on a scenic mountain road.",
-      "imageUrl": "https://i.imgur.com/N5OPEtI.jpg",
-      "imageHint": "cyclist mountain"
-    },
-    {
-      "id": "swimmer",
-      "description": "A person swimming in a pool.",
-      "imageUrl": "https://i.imgur.com/fA15lV7.jpg",
-      "imageHint": "swimmer pool"
-    },
-    {
-      "id": "kayak",
-      "description": "People kayaking on a river surrounded by lush green hills.",
-      "imageUrl": "https://i.imgur.com/3j3y5sS.jpg",
-      "imageHint": "kayak river"
-    },
-    {
-      "id": "hiking",
-      "description": "A group of hikers walking on a trail in the mountains.",
-      "imageUrl": "https://i.imgur.com/Z45T9NB.jpg",
-      "imageHint": "hiking mountains"
     }
   ]
 }
