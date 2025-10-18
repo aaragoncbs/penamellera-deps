@@ -19,7 +19,7 @@ export default function HeroSection() {
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 text-center px-4 flex flex-col items-center mt-40">
+      <div className="relative z-10 text-center px-4 flex flex-col items-center mt-20">
         <h1 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">
           Deportes Peñamellera
         </h1>
