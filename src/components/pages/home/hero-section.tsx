@@ -7,7 +7,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-landscape');
 
   return (
-    <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-white">
+    <section className="relative h-[70vh] md:h-[80vh] w-full flex items-center justify-center text-white">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
